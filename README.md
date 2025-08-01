@@ -21,7 +21,7 @@ python app.py
 
 ## Access from LAN
 
-- Open in browser: `http://<your-ip>:5000` (e.g. http://192.168.31.160:5000)
+- Open in browser: `http://<your-ip>:5000` 
 - Make sure your PC and phone are connected to the same Wi-Fi.
 
 ## File Structure
