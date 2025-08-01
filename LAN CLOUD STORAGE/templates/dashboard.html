@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome {{ session.username }}</h2>
+    <a href="/logout">Logout</a>
+    <h3>Upload File</h3>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+    <h3>Files</h3>
+    <ul>
+        {% for file in files %}
+        <li>
+            {{ file }} —
+            <a href="/download/{{ file }}">Download</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
